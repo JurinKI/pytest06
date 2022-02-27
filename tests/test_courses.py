@@ -15,7 +15,7 @@ def test_call_post_api():
     assert response.status_code == 200
     assert response.json() == {"msg": "Hello World"}
 
-def test_call_post_data_api():
+def test_false_post_data_api():
     input = "prateep"
     response = client.post("/courses/body",
         json = {"name": input}    
